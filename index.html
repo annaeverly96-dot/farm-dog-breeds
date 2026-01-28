@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farm Dog Breeds That Support Rural Life and Livestock Care</title>
+  <meta name="description" content="Farm dog breeds support rural life through herding, guarding, training, and companionship—built for livestock care and farm security." />
+
+  <style>
+    :root{
+      /* “Ranch / Rural” brand palette (professional + engaging) */
+      --bg: #0b1411;          /* deep pine */
+      --panel: #0f1d18;       /* darker green panel */
+      --card: #101f1a;        /* card base */
+      --muted: #a9b8b1;       /* soft sage text */
+      --text: #eaf3ef;        /* near-white */
+      --brand: #56c18a;       /* fresh green */
+      --brand-2: #f0b35c;     /* warm sand accent */
+      --brand-3: #5cc8f0;     /* subtle sky highlight */
+      --danger: #ff6b6b;
+      --stroke: rgba(255,255,255,.10);
+      --stroke-2: rgba(255,255,255,.14);
+
+      --shadow: 0 18px 55px rgba(0,0,0,.40);
+      --shadow-soft: 0 10px 30px rgba(0,0,0,.28);
+
+      --radius-xl: 22px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+
+      --max: 1200px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 800px at 18% -10%, rgba(86,193,138,.22), transparent 55%),
+        radial-gradient(900px 600px at 85% 12%, rgba(240,179,92,.20), transparent 55%),
+        radial-gradient(900px 650px at 65% 95%, rgba(92,200,240,.12), transparent 55%),
+        linear-gradient(180deg, #07100d 0%, var(--bg) 45%, #060e0b 100%);
+      line-height:1.7;
+    }
+
+    a{ color:var(--text); text-decoration:none; }
+    a:hover{ opacity:.92; }
+
+    /* Full-width layout + centered content */
+    .wrap{
+      width:100%;
+      margin:0 auto;
+      padding: 22px 18px 0;
+    }
+    .container{
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    /* Top header */
+    header{
+      position: sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(14px);
+      background: linear-gradient(180deg, rgba(7,16,13,.85), rgba(7,16,13,.55));
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      padding: 14px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 240px;
+    }
+
+    .logo{
+      width:42px;
+      height:42px;
+      border-radius: 14px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(86,193,138,.90), rgba(86,193,138,.20)),
+        linear-gradient(135deg, rgba(240,179,92,.45), rgba(92,200,240,.18));
+      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+      border: 1px solid var(--stroke-2);
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+    }
+
+    .logo svg{ opacity:.95; }
+
+    .brand h1{
+      font-size: 14px;
+      margin:0;
+      letter-spacing:.4px;
+      text-transform: uppercase;
+      color: rgba(234,243,239,.86);
+    }
+    .brand p{
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    nav{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap: wrap;
+      justify-content:flex-end;
+    }
+
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: rgba(15,29,24,.55);
+      color: rgba(234,243,239,.92);
+      font-size: 13px;
+      transition: transform .15s ease, border-color .15s ease, background .15s ease;
+      white-space:nowrap;
+    }
+    .pill:hover{
+      transform: translateY(-1px);
+      border-color: rgba(86,193,138,.35);
+      background: rgba(15,29,24,.70);
+    }
+
+    .cta{
+      border-color: rgba(240,179,92,.38);
+      background: linear-gradient(135deg, rgba(240,179,92,.20), rgba(86,193,138,.10));
+    }
+
+    /* Hero */
+    .hero{
+      padding: 34px 0 18px;
+    }
+
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .heroMain{
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(15,29,24,.85), rgba(16,31,26,.70));
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow);
+      padding: 26px 22px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .heroMain::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(450px 350px at 18% 15%, rgba(86,193,138,.20), transparent 60%),
+        radial-gradient(380px 320px at 88% 30%, rgba(240,179,92,.18), transparent 60%);
+      pointer-events:none;
+    }
+
+    .kicker{
+      position:relative;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid var(--stroke);
+      color: rgba(234,243,239,.92);
+      font-size: 13px;
+      margin-bottom: 14px;
+      backdrop-filter: blur(10px);
+    }
+
+    .kicker .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: var(--brand);
+      box-shadow: 0 0 0 5px rgba(86,193,138,.12);
+    }
+
+    .heroTitle{
+      position:relative;
+      margin:0 0 10px;
+      font-size: clamp(26px, 3.2vw, 40px);
+      line-height:1.15;
+      letter-spacing:-.3px;
+    }
+    .heroLead{
+      position:relative;
+      margin:0;
+      color: rgba(234,243,239,.82);
+      font-size: 15.5px;
+      max-width: 72ch;
+    }
+
+    .heroAside{
+      border-radius: var(--radius-xl);
+      background: linear-gradient(180deg, rgba(16,31,26,.75), rgba(15,29,24,.65));
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .stat{
+      display:flex;
+      gap:12px;
+      padding: 14px;
+      border-radius: 16px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+    }
+    .iconBox{
+      width:40px;height:40px;border-radius: 14px;
+      display:grid;place-items:center;
+      border: 1px solid var(--stroke);
+      background: linear-gradient(135deg, rgba(86,193,138,.18), rgba(240,179,92,.12));
+      flex:0 0 auto;
+    }
+    .stat b{
+      display:block;
+      font-size: 14px;
+      margin-bottom: 2px;
+    }
+    .stat span{
+      display:block;
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height:1.35;
+    }
+
+    /* Content */
+    main{
+      padding: 14px 0 38px;
+    }
+    .content{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap: 18px;
+      align-items:start;
+    }
+
+    .article{
+      border-radius: var(--radius-xl);
+      background: rgba(15,29,24,.55);
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow-soft);
+      overflow:hidden;
+    }
+
+    .articleInner{
+      padding: 22px;
+    }
+
+    .section{
+      padding: 18px 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .section:last-child{ border-bottom:none; }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 20px;
+      letter-spacing:-.2px;
+    }
+    p{
+      margin: 0 0 12px;
+      color: rgba(234,243,239,.84);
+    }
+
+    .callout{
+      margin: 14px 0 0;
+      border-radius: 18px;
+      border: 1px solid rgba(240,179,92,.28);
+      background: linear-gradient(135deg, rgba(240,179,92,.12), rgba(86,193,138,.08));
+      padding: 14px 14px;
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+    }
+    .callout b{ display:block; margin-bottom:4px; }
+    .callout p{ margin:0; color: rgba(234,243,239,.84); }
+
+    .linkGlow{
+      color: rgba(234,243,239,.96);
+      font-weight: 650;
+      text-decoration: underline;
+      text-decoration-color: rgba(86,193,138,.55);
+      text-underline-offset: 4px;
+    }
+    .linkGlow:hover{
+      text-decoration-color: rgba(240,179,92,.75);
+    }
+
+    /* Table */
+    .tableWrap{
+      overflow:auto;
+      border-radius: 18px;
+      border: 1px solid var(--stroke);
+      background: rgba(0,0,0,.12);
+      margin-top: 12px;
+    }
+    table{
+      width:100%;
+      border-collapse: collapse;
+      min-width: 620px;
+    }
+    thead th{
+      text-align:left;
+      font-size: 12px;
+      letter-spacing:.5px;
+      text-transform: uppercase;
+      color: rgba(234,243,239,.82);
+      background: rgba(255,255,255,.06);
+      border-bottom: 1px solid var(--stroke);
+      padding: 12px 12px;
+      position: sticky;
+      top: 0;
+    }
+    tbody td{
+      padding: 12px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      color: rgba(234,243,239,.84);
+      vertical-align: top;
+      font-size: 14px;
+    }
+    tbody tr:hover td{
+      background: rgba(86,193,138,.06);
+    }
+
+    /* List */
+    .checks{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style:none;
+      display:grid;
+      gap:10px;
+    }
+    .checks li{
+      display:flex;
+      gap:10px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      color: rgba(234,243,239,.86);
+    }
+    .checkIcon{
+      width:22px;height:22px;border-radius: 10px;
+      display:grid;place-items:center;
+      border: 1px solid rgba(86,193,138,.35);
+      background: rgba(86,193,138,.10);
+      flex:0 0 auto;
+      margin-top: 1px;
+    }
+    .checks small{ color: var(--muted); display:block; margin-top: 2px; }
+
+    /* Sidebar */
+    aside{
+      position: sticky;
+      top: 86px;
+      align-self: start;
+    }
+    .sideCard{
+      border-radius: var(--radius-xl);
+      background: rgba(15,29,24,.55);
+      border: 1px solid var(--stroke);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+      overflow:hidden;
+    }
+    .sideTitle{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom: 12px;
+    }
+    .sideTitle h3{
+      margin:0;
+      font-size: 15px;
+      letter-spacing:.2px;
+    }
+    .badge{
+      font-size: 12px;
+      color: rgba(234,243,239,.86);
+      border: 1px solid rgba(92,200,240,.28);
+      background: rgba(92,200,240,.10);
+      padding: 6px 10px;
+      border-radius: 999px;
+      white-space:nowrap;
+    }
+    .quickNav{
+      display:grid;
+      gap:10px;
+    }
+    .quickNav a{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      font-size: 13px;
+      color: rgba(234,243,239,.90);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .quickNav a:hover{
+      transform: translateY(-1px);
+      border-color: rgba(240,179,92,.35);
+    }
+    .arrow{
+      opacity:.8;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    footer{
+      border-top: 1px solid var(--stroke);
+      background: linear-gradient(180deg, rgba(7,16,13,.45), rgba(7,16,13,.85));
+      padding: 26px 0;
+    }
+    .footerGrid{
+      display:flex;
+      align-items:flex-start;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    .footNote{
+      color: rgba(234,243,239,.70);
+      font-size: 13px;
+      max-width: 70ch;
+    }
+    .social{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .social a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,.04);
+      font-size: 13px;
+      color: rgba(234,243,239,.88);
+    }
+    .social a:hover{
+      border-color: rgba(86,193,138,.35);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .content{ grid-template-columns: 1fr; }
+      aside{ position: static; }
+      .brand{ min-width: auto; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap">
+      <div class="container">
+        <div class="topbar">
+          <div class="brand">
+            <div class="logo" aria-hidden="true">
+              <!-- simple “paw + shield” icon -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.5c3.3 0 7 1.9 7 1.9v7.5c0 6-7 9.6-7 9.6S5 18 5 11.9V4.4S8.7 2.5 12 2.5Z" stroke="rgba(234,243,239,.9)" stroke-width="1.5"/>
+                <path d="M9.7 14.3c.6-.8 1.6-1.3 2.3-1.3s1.7.5 2.3 1.3c.7.9.4 2.2-.6 2.8-.6.4-1.2.6-1.7.6s-1.1-.2-1.7-.6c-1-.6-1.3-1.9-.6-2.8Z" fill="rgba(86,193,138,.85)"/>
+                <circle cx="8.3" cy="11.2" r="1.1" fill="rgba(240,179,92,.9)"/>
+                <circle cx="15.7" cy="11.2" r="1.1" fill="rgba(240,179,92,.9)"/>
+              </svg>
+            </div>
+            <div>
+              <h1>Rural Working Dogs</h1>
+              <p>Herding • Guarding • Farm Support</p>
+            </div>
+          </div>
+
+          <nav aria-label="Primary">
+            <a class="pill" href="#role">Role</a>
+            <a class="pill" href="#traits">Ideal Traits</a>
+            <a class="pill" href="#herding">Herding</a>
+            <a class="pill" href="#guarding">Guarding</a>
+            <a class="pill cta" href="#choose">Choose Breed</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="wrap hero">
+    <div class="container">
+      <div class="heroGrid">
+        <section class="heroMain" aria-label="Hero">
+          <div class="kicker">
+            <span class="dot" aria-hidden="true"></span>
+            Built for rural life • Strong work ethic • Livestock-ready
+          </div>
+
+          <h2 class="heroTitle">Farm Dog Breeds That Support Rural Life and Livestock Care</h2>
+
+          <p class="heroLead">
+            Farm dog breeds have played an essential role in agricultural life for centuries. These dogs are not only companions
+            but also hardworking partners that assist farmers with daily tasks. From herding livestock to guarding property,
+            farm dogs contribute significantly to safety, productivity, and balance on a farm. Their intelligence, strength,
+            and loyalty make them invaluable in rural environments where reliability and adaptability are crucial.
+          </p>
+
+          <div class="callout" style="position:relative;">
+            <div class="iconBox" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l2.6 5.3 5.9.9-4.3 4.2 1 5.9-5.2-2.7-5.2 2.7 1-5.9-4.3-4.2 5.9-.9L12 3Z" stroke="rgba(234,243,239,.85)" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div>
+              <b>Quick resource (Intro mid-link)</b>
+              <p>
+                If you want a curated comparison list, explore
+                <a class="linkGlow" href="https://readytoranch.com/best-farm-dog-breeds/" target="_blank" rel="noopener">
+                  farm dog breeds
+                </a>
+                and match the breed’s role to your land, livestock, and security needs.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="heroAside" aria-label="Highlights">
+          <div class="stat">
+            <div class="iconBox" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 18V6m0 12h16M8 16V8m4 8V10m4 6V12" stroke="rgba(234,243,239,.85)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <b>Productivity Boost</b>
+              <span>Smart herding + fast response reduces daily workload.</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="iconBox" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l8 4v6c0 6-4 9-8 10-4-1-8-4-8-10V6l8-4Z" stroke="rgba(234,243,239,.85)" stroke-width="1.5"/>
+                <path d="M9 12l2 2 4-5" stroke="rgba(86,193,138,.9)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <b>Farm Security</b>
+              <span>Guardians deter predators & protect livestock calmly.</span>
+            </div>
+          </div>
+
+          <div class="stat">
+            <div class="iconBox" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M7 7a2 2 0 1 0 0 .01V7Zm10 0a2 2 0 1 0 0 .01V7ZM6.5 14.2c.8-1 2.2-1.7 3.5-1.7S12.7 13.2 13.5 14.2c.8 1 .5 2.5-.7 3.3-.7.4-1.5.7-2.3.7s-1.6-.3-2.3-.7c-1.2-.8-1.5-2.3-.7-3.3Z" fill="rgba(240,179,92,.35)" stroke="rgba(234,243,239,.65)" stroke-width="1.2"/>
+              </svg>
+            </div>
+            <div>
+              <b>Companionship</b>
+              <span>Loyal, affectionate, and protective with families.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <!-- Body -->
+  <main class="wrap">
+    <div class="container content">
+      <article class="article">
+        <div class="articleInner">
+
+          <section class="section" id="role">
+            <h2>The Role of Farm Dogs</h2>
+            <p>
+              Farm dogs are bred and trained to perform specific tasks that support agricultural operations. Unlike household pets,
+              these dogs are expected to work alongside humans and respond quickly to commands. Their responsibilities may include
+              protecting livestock from predators, managing herds, alerting owners to unusual activity, and even assisting with pest
+              control. This combination of instinct and training allows farm dogs to function as dependable working animals.
+            </p>
+          </section>
+
+          <section class="section" id="traits">
+            <h2>Characteristics of Ideal Farm Dog Breeds</h2>
+            <p>
+              Not all dog breeds are suited for farm life. Farm dog breeds are typically intelligent, energetic, and highly trainable.
+              They possess strong protective instincts and are comfortable working outdoors for extended periods. Physical endurance,
+              alertness, and problem-solving ability are also important traits. These characteristics enable farm dogs to adapt to changing
+              conditions and perform their duties effectively.
+            </p>
+          </section>
+
+          <section class="section" id="herding">
+            <h2>Herding Farm Dog Breeds</h2>
+            <p>
+              Herding breeds are among the most commonly used farm dogs. These dogs are known for their ability to guide and control livestock
+              with precision. Their natural instinct to herd allows them to manage animals such as sheep, cattle, and goats efficiently.
+              Herding dogs are highly responsive and excel in environments where quick decision-making is required.
+            </p>
+
+            <h2 style="margin-top:14px;">Popular Farm Dog Breeds and Their Strengths</h2>
+            <div class="tableWrap" role="region" aria-label="Farm Dog Breeds Table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Dog Breed</th>
+                    <th>Primary Role</th>
+                    <th>Suitable Farm Tasks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Border Collie</b></td>
+                    <td>Herding</td>
+                    <td>Livestock management</td>
+                  </tr>
+                  <tr>
+                    <td><b>Australian Shepherd</b></td>
+                    <td>Herding</td>
+                    <td>Cattle and sheep control</td>
+                  </tr>
+                  <tr>
+                    <td><b>Great Pyrenees</b></td>
+                    <td>Guarding</td>
+                    <td>Livestock protection</td>
+                  </tr>
+                  <tr>
+                    <td><b>German Shepherd</b></td>
+                    <td>Guarding &amp; Working</td>
+                    <td>Farm security</td>
+                  </tr>
+                  <tr>
+                    <td><b>Anatolian Shepherd</b></td>
+                    <td>Guarding</td>
+                    <td>Predator deterrence</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="section" id="guarding">
+            <h2>Guarding Farm Dog Breeds</h2>
+            <p>
+              Guarding breeds are specifically developed to protect farms and livestock from predators and intruders. These dogs are typically
+              large, calm, and confident. They remain alert without being aggressive and are known for forming strong bonds with animals they protect.
+              Their presence alone often discourages threats, making them effective guardians in rural areas.
+            </p>
+          </section>
+
+          <section class="section" id="family">
+            <h2>Farm Dogs as Family Companions</h2>
+            <p>
+              Although farm dogs are working animals, many breeds also make excellent family companions. They are loyal, affectionate, and protective
+              of their human families. With proper training and socialization, farm dogs can balance work responsibilities with companionship,
+              making them well-suited for households that value both productivity and emotional connection.
+            </p>
+          </section>
+
+          <section class="section" id="training">
+            <h2>Training and Socialization</h2>
+            <p>
+              Training is essential for farm dog breeds to perform effectively. Early socialization helps dogs understand boundaries, commands,
+              and appropriate behavior around livestock. Consistent training strengthens communication between the dog and owner, ensuring tasks
+              are carried out safely. Well-trained farm dogs demonstrate discipline, focus, and confidence in their work.
+            </p>
+
+            <!-- Second link (content mid) -->
+            <div class="callout">
+              <div class="iconBox" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 6v6l4 2" stroke="rgba(234,243,239,.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="rgba(234,243,239,.55)" stroke-width="1.2"/>
+                </svg>
+              </div>
+              <div>
+                <b>Pro tip (Mid-content link)</b>
+                <p>
+                  For step-by-step obedience routines and livestock-safe handling, add your second reference here:
+                  <a class="linkGlow" href="YOUR_SECOND_LINK_HERE" target="_blank" rel="noopener">
+                    working farm dog training guide
+                  </a>.
+                  <span style="color:var(--muted);">Replace <b>YOUR_SECOND_LINK_HERE</b> with your provided URL.</span>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" id="health">
+            <h2>Health and Physical Endurance</h2>
+            <p>
+              Farm dogs require strong physical health to handle demanding tasks. Regular exercise, balanced nutrition, and routine veterinary care are vital.
+              Many farm dog breeds are naturally resilient, but maintaining their health ensures longevity and consistent performance. Their physical endurance
+              allows them to work long hours in varying weather conditions.
+            </p>
+          </section>
+
+          <section class="section" id="benefits">
+            <h2>Benefits of Having Farm Dog Breeds</h2>
+            <p>
+              Farm dog breeds offer numerous advantages to farmers and rural households. They improve livestock management, enhance security, and reduce workload.
+              Their presence creates a sense of structure and safety on the farm. Beyond their practical value, farm dogs also provide companionship and emotional support.
+            </p>
+
+            <h2 style="margin-top:14px;">Key Benefits of Farm Dog Breeds</h2>
+            <ul class="checks">
+              <li>
+                <span class="checkIcon" aria-hidden="true">✓</span>
+                <div>
+                  <b>Efficient livestock management</b>
+                  <small>Better movement control, less stress on animals.</small>
+                </div>
+              </li>
+              <li>
+                <span class="checkIcon" aria-hidden="true">✓</span>
+                <div>
+                  <b>Enhanced farm security</b>
+                  <small>Deters predators and alerts to unusual activity.</small>
+                </div>
+              </li>
+              <li>
+                <span class="checkIcon" aria-hidden="true">✓</span>
+                <div>
+                  <b>Strong loyalty and intelligence</b>
+                  <small>Fast learning + dependable performance.</small>
+                </div>
+              </li>
+              <li>
+                <span class="checkIcon" aria-hidden="true">✓</span>
+                <div>
+                  <b>Adaptability to outdoor environments</b>
+                  <small>Comfortable in changing rural conditions.</small>
+                </div>
+              </li>
+              <li>
+                <span class="checkIcon" aria-hidden="true">✓</span>
+                <div>
+                  <b>Reliable working ability</b>
+                  <small>Consistent help across daily farm tasks.</small>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <section class="section" id="choose">
+            <h2>Choosing the Right Farm Dog Breed</h2>
+            <p>
+              Selecting the right farm dog breed depends on the specific needs of the farm. Factors such as livestock type, land size, climate, and workload should be considered.
+              Some breeds excel in herding, while others specialize in guarding. Understanding these differences helps farmers choose a breed that aligns with their operational requirements.
+            </p>
+          </section>
+
+          <section class="section" id="modern">
+            <h2>Farm Dogs in Modern Agriculture</h2>
+            <p>
+              In modern agriculture, farm dog breeds continue to play a valuable role. While technology has advanced farming methods, dogs remain irreplaceable in tasks requiring instinct and adaptability.
+              Their ability to respond to real-time situations makes them an essential part of efficient farm management.
+            </p>
+          </section>
+
+          <section class="section" id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+              Farm dog breeds are more than just animals; they are trusted partners that support rural life and agricultural success. Through intelligence, strength, and loyalty, these dogs contribute to safety,
+              efficiency, and companionship on farms. Choosing the right farm dog breed and providing proper training ensures a productive and rewarding relationship that benefits both the farmer and the dog.
+            </p>
+          </section>
+
+        </div>
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sideCard">
+          <div class="sideTitle">
+            <h3>Quick Jump</h3>
+            <span class="badge">Full-width • Pro UI</span>
+          </div>
+          <div class="quickNav" aria-label="Quick navigation">
+            <a href="#role">The Role of Farm Dogs <span class="arrow">→</span></a>
+            <a href="#traits">Ideal Characteristics <span class="arrow">→</span></a>
+            <a href="#herding">Herding Breeds <span class="arrow">→</span></a>
+            <a href="#guarding">Guarding Breeds <span class="arrow">→</span></a>
+            <a href="#training">Training & Socialization <span class="arrow">→</span></a>
+            <a href="#benefits">Key Benefits <span class="arrow">→</span></a>
+            <a href="#choose">Choosing the Right Breed <span class="arrow">→</span></a>
+            <a href="#conclusion">Conclusion <span class="arrow">→</span></a>
+          </div>
+
+          <div class="callout" style="margin-top:14px;">
+            <div class="iconBox" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4 7h16M4 12h16M4 17h10" stroke="rgba(234,243,239,.85)" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <b>SEO-friendly structure</b>
+              <p style="margin:0;color:rgba(234,243,239,.82);">
+                Clean headings, scannable sections, and a sticky sidebar for strong UX.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="container footerGrid">
+        <div>
+          <div class="brand" style="min-width:auto;">
+            <div class="logo" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.5c3.3 0 7 1.9 7 1.9v7.5c0 6-7 9.6-7 9.6S5 18 5 11.9V4.4S8.7 2.5 12 2.5Z" stroke="rgba(234,243,239,.9)" stroke-width="1.5"/>
+                <path d="M9.7 14.3c.6-.8 1.6-1.3 2.3-1.3s1.7.5 2.3 1.3c.7.9.4 2.2-.6 2.8-.6.4-1.2.6-1.7.6s-1.1-.2-1.7-.6c-1-.6-1.3-1.9-.6-2.8Z" fill="rgba(86,193,138,.85)"/>
+              </svg>
+            </div>
+            <div>
+              <h1 style="margin:0;font-size:13px;">Rural Working Dogs</h1>
+              <p style="margin:2px 0 0;">Herding • Guarding • Companion Support</p>
+            </div>
+          </div>
+
+          <p class="footNote" style="margin-top:10px;">
+            Tip: Replace <b>YOUR_SECOND_LINK_HERE</b> in the mid-content section with your second URL,
+            so both links are placed exactly as you requested (intro mid + content mid).
+          </p>
+        </div>
+
+        <div>
+          <p style="margin:0 0 10px;color:rgba(234,243,239,.78);font-size:13px;">Follow us</p>
+          <div class="social" aria-label="Social links">
+            <a href="#" target="_blank" rel="noopener">
+              <!-- Facebook -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M14 8h3V5h-3c-2.2 0-4 1.8-4 4v3H7v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z" fill="rgba(234,243,239,.85)"/>
+              </svg>
+              Facebook
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <!-- Instagram -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Z" stroke="rgba(234,243,239,.85)" stroke-width="1.5"/>
+                <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="rgba(240,179,92,.85)" stroke-width="1.5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="rgba(86,193,138,.85)"/>
+              </svg>
+              Instagram
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <!-- X/Twitter -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M18 3h3l-7.5 8.6L22 21h-6l-4.7-5.6L6 21H3l8.1-9.3L2 3h6l4.2 5L18 3Z" fill="rgba(234,243,239,.85)"/>
+              </svg>
+              X
+            </a>
+            <a href="#" target="_blank" rel="noopener">
+              <!-- YouTube -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21.5 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.4.5A3 3 0 0 0 2.5 7.2 31 31 0 0 0 2.5 12a31 31 0 0 0 0 4.8 3 3 0 0 0 2.1 2.1c1.7.5 7.4.5 7.4.5s5.7 0 7.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 21.5 12a31 31 0 0 0 0-4.8Z" fill="rgba(234,243,239,.22)" stroke="rgba(234,243,239,.75)" stroke-width="1.2"/>
+                <path d="M10 9.6v4.8L14.5 12 10 9.6Z" fill="rgba(240,179,92,.95)"/>
+              </svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
